@@ -72,7 +72,7 @@ func main() {
 	stdinCh <- "Input Data"
 	close(stdinCh)
 
-	for line := range ch {
+	for line := range stdoutCh {
 		// Process each line of the output as you like.
 		fmt.Println("Got line: " + line)
 	}
